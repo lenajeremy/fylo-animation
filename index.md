@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- displays site properly based on user's device -->
+
+ <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="css/bootstrap.css">
+
+ <!-- Custom CSS -->
+ <link rel="stylesheet" href="css/fylo.css">
+ <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+
+<body>
+ <div class="main">
+  <img src="images/bg-desktop.svg" id=backgroundimg alt="">
+  <div class="wrapper text-white">
+   <div class="row">
+    <div class="col-md-4 col-12 first-col my-3 my-md-0">
+     <div class="logo">
+      <img src="images/logo.svg" alt="">
+     </div>
+     <div class='icons d-flex'>
+      <div class="icon"><img src='images/icon-document.svg' alt=""></div>
+      <div class="icon"><img src="images/icon-folder.svg" alt=""></div>
+      <div class="icon"><img src="images/icon-upload.svg" id=upload alt=""></div>
+     </div>
+    </div>
+    <div class="col-md-6 col-12 my-3 my-md-0 second-col py-4">
+     <div class="second-col-wrapper">
+      <p class='lead text-center text-md-left'>You’ve used <b>815 GB</b> of your storage</p>
+      <div class="size badge-pill">
+       <div class="value badge-pill">
+        <div class="end"></div>
+       </div>
+      </div>
+      <div class="bottom-text mt-1">
+       <p>0 GB</p>
+       <p>1000 GB</p>
+      </div>
+      <div class="banner"><span class=number>185</span>GB Left</div>
+     </div>
+    </div>
+   </div>
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Lena Jeremiah</a>.
+   </div>
+  </div>
+  </div>
+  <script>
+   var bgImage = document.querySelector('#backgroundimg')
+   if (window.innerWidth < 800) {
+    bgImage.src = 'images/bg-mobile.svg';
+  </script>
+  <script src="js/fylo.js"></script>
+</body>
+</html>
